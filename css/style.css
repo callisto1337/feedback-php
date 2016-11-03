@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.input textarea {
+    resize: none;
+}
+
+.wrapper {
+    width: 265px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.input {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    width: 262px;
+    height: 30px;
+    border: 0;
+    padding: 0;
+}
+
+.notice p {
+    color: white;
+    padding: 7px 5px;
+    display: none;
+}
+
+.notice #succes {
+    background-color: #0bbd0b;
+    color: white;
+}
+
+.notice #error {
+    background-color: #e83232;
+    color: white;
+}
+
+.notice #sending {
+    background-color: #e2e200;
+    color: white;
+}

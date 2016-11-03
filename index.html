@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>My PHP</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <form id="form" method="post">
+        <h1>Обратная связь</h1>
+        <div>
+            <input id="name" class="input" type="text" name="name" placeholder="ФИО">
+        </div>
+        <div>
+            <input id="number" class="input" type="text" name="number" placeholder="Номер телефона">
+        </div>
+        <div>
+            <input id="email" class="input" type="text" name="email" placeholder="Email">
+        </div>
+        <div>
+            <textarea id="comment" class="input" placeholder="Комментарий" name="comment" rows="4"></textarea><br>
+        </div>
+        <button class="input submit">Submit</button>
+    </form>
+    <div class="notice">
+        <p id="succes">Ваше сообщение успешно отправлено!</p>
+        <p id="sending">Сообщение отправляется, пожалуйста подождите</p>
+        <p id="error"></p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
