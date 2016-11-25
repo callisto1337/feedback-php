@@ -16,13 +16,13 @@ $(document).ready(function () {
         }
         else if (!test_mail.test($("#email").val())) {
             $("#email").focus();
-            $("#succes").css("display", "none");
+            $("#success").css("display", "none");
             $("#error").css("display", "block").html(error_mail);
         }
         else {
             $("#sending").css("display", "block");
             $("#error").css("display", "none");
-            $("#succes").css("display", "none");
+            $("#success").css("display", "none");
 
             $.ajax({
                 url: "form.php",
@@ -39,25 +39,25 @@ $(document).ready(function () {
                     if (resp['status'] === "success") {
                         $("#error").css("display", "none");
                         $("#sending").css("display", "none");
-                        $("#succes").css("display", "block");
+                        $("#success").css("display", "block");
                         $("#form").trigger("reset");
                     }
                     else if (resp['status'] === "error_mail") {
                         $("#email").focus();
                         $("#error").css("display", "block").html(error_mail);
                         $("#sending").css("display", "none");
-                        $("#succes").css("display", "none");
+                        $("#success").css("display", "none");
                     }
                     else if (resp['status'] === "error_string") {
                         $("#error").css("display", "block").html(error_string);
                         $("#sending").css("display", "none");
-                        $("#succes").css("display", "none");
+                        $("#success").css("display", "none");
                     }
                 },
                 error: function () {
                     $("#error").css("display", "block").html(error_server);
                     $("#sending").css("display", "none");
-                    $("#succes").css("display", "none");
+                    $("#success").css("display", "none");
                 }
             });
         }

@@ -6,15 +6,14 @@ h1 {
     margin-top: 0;
 }
 
-.input textarea {
+textarea {
     resize: none;
 }
 
 .wrapper {
     width: 265px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     text-align: center;
-    margin-top: 40px;
     padding: 30px;
     border: 1px solid black;
 }
@@ -38,17 +37,14 @@ h1 {
     display: none;
 }
 
-.notice #succes {
+.notice #success {
     background-color: #0bbd0b;
-    color: white;
 }
 
 .notice #error {
     background-color: #e83232;
-    color: white;
 }
 
 .notice #sending {
     background-color: #e2e200;
-    color: white;
 }
